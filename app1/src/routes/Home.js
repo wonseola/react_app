@@ -8,7 +8,7 @@ function Home() {
     const [movies, setMovies] = useState([])
 
     const getMovies = async () => {
-        const json = await (await fetch("https://yts.mx/api/v2/list_movies.json?minimum_rating=8.7&sort_by=year")).json();
+        const json = await (await fetch("https://yts.mx/api/v2/list_movies.json")).json();
         setMovies(json.data.movies);
         setLoading(false);
     }

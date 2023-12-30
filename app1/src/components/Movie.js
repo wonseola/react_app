@@ -8,7 +8,7 @@ function Movie({ id, coverImg, title, summary, genres }) {
         <div className="movie">
             <img src={coverImg} alt={title} />
             <h3><Link to={`${process.env.PUBLIC_URL}/movie/${id}`} > {title} </Link> </h3>
-            <p>{summary}</p>
+            <p>{summary.lenth > 10 ? `${summary.slice(0, 10)}..!!@!@!@.` : summary}</p>
             <ul>
                 {genres.map(g => <li key={g}>{g}</li>)}
             </ul>
