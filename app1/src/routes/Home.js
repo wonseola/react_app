@@ -16,7 +16,6 @@ function Home() {
     useEffect(() => {
         getMovies()
     }, [])
-    console.log(movies);
 
 
     return (
@@ -24,6 +23,7 @@ function Home() {
             {loading ? <h1>Loading</h1> :
                 <div>
                     {movies.map(movie => <Movie
+                        id={movie.id}
                         key={movie.id}
                         coverImg={movie.medium_cover_image}
                         title={movie.title}
