@@ -1,0 +1,81 @@
+/* Movie.css 파일에 추가 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+.movie {
+    display: inline-block;
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.movie h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Movie.css 파일에 추가 */
+
+.movie p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* 표시할 줄 수 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 말줄임표 설정 */
+}
+
+
+.movie ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.movie li {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.movie li:before {
+    content: "•";
+    margin-right: 5px;
+}
+
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.movie {
+    width: 20%;
+    height: 100%;
+    margin-bottom: 20px;
+}
